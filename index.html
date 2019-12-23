@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <title>Merry Xmas</title>
 </head>
 <body>
@@ -15,13 +15,11 @@
         mùa noel xa nhà đầu tiên thật vui tươi, ấm áp và an lành nhé. </p>
     <p class="content">Chúc cô với những điều tốt đẹp nhất sẽ đến trong ngày Giáng Sinh này.</p>
     <p class="content">Nguyện xin Chúa Hài Đồng ngự xuống và ban ơn trên cô cũng như gia đình cô, không chỉ trong mùa Noel này mà còn mãi về sau nữa!</p>
-    <audio id="audio" autoplay>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
+    <iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+    <audio autoplay>
+        <source src="audio.mp3" type="audio/mp3"> </audio>
     <script>
-        $(document).ready(function(){
-            $('#audio').autoplay;
-        })
+        
     </script>
 </body>
 </html>
