@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(243, 63, 63);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#title{
+    font-size: 50px;
+    color: #fff;
+}
+.content{
+    color: #fff;
+}
