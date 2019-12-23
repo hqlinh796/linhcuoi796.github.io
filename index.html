@@ -9,17 +9,21 @@
     <title>Merry Xmas</title>
 </head>
 <body>
+    <div class="main">
     <h1 id="title">Merry Xmas</h1>
     <p class="content">Mừng Chúa Giáng Sinh!</p>
-    <p class="content">Trời thì vẫn nóng nực, nhưng mở cái điều hòa 24 độ se se lạnh lên thì anh mới giật mình: "À, mai noel rồi! :))". Hi vọng cô sẽ có
-        mùa noel xa nhà đầu tiên thật vui tươi, ấm áp và an lành nhé. </p>
-    <p class="content">Chúc cô với những điều tốt đẹp nhất sẽ đến trong ngày Giáng Sinh này.</p>
-    <p class="content">Nguyện xin Chúa Hài Đồng ngự xuống và ban ơn trên cô cũng như gia đình cô, không chỉ trong mùa Noel này mà còn mãi về sau nữa!</p>
+    <p class="content">Trời thì vẫn nóng nực, nhưng mở cái điều hòa 24 độ se se lạnh lên thì anh mới giật mình: "À, mai noel rồi! :))". NOEL đến rồi đó côôôôôôô </p>
+    <p class="content">Hi vọng cô sẽ có mùa noel xa nhà đầu tiên thật vui tươi, ấm áp và an lành nhé. Chúc cô với những điều tốt đẹp nhất sẽ đến trong ngày Giáng Sinh này.</p>
+    <p class="content">Và, nguyện xin Chúa Hài Đồng ngự xuống, ban ơn trên cô cũng như gia đình cô, không chỉ trong mùa Noel này mà còn mãi về sau nữa!</p>
     <iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
-    <audio autoplay>
-        <source src="audio.mp3" type="audio/mp3"> </audio>
+    <audio id="main-audio" autoplay controls>
+        <source src="audio.mp3" type="audio/mp3"> 
+    </audio>
+</div>
     <script>
-        
+        document.onload = function(e){
+            document.getElementById("main-audio").load();
+        }
     </script>
 </body>
 </html>
