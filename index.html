@@ -15,14 +15,50 @@
     <p class="content">Trời thì vẫn nóng nực, nhưng mở cái điều hòa 24 độ se se lạnh lên thì anh mới giật mình: "À, mai noel rồi! :))". NOEL đến rồi đó côôôôôôô </p>
     <p class="content">Hi vọng cô sẽ có mùa noel xa nhà đầu tiên thật vui tươi, ấm áp và an lành nhé. Chúc cô với những điều tốt đẹp nhất sẽ đến trong ngày Giáng Sinh này.</p>
     <p class="content">Và, nguyện xin Chúa Hài Đồng ngự xuống, ban ơn trên cô cũng như gia đình cô, không chỉ trong mùa Noel này mà còn mãi về sau nữa!</p>
-    <iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+    <iframe src="audio/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
     <audio id="main-audio" autoplay controls>
-        <source src="audio.mp3" type="audio/mp3"> 
+        <source src="audio/audio.mp3" type="audio/mp3"> 
     </audio>
+    <p id="result">Chọn 1 phần quà đi cô!</p>
+    <div class="gift">
+        <img src="img/red-gift.png" alt="" id="red-gift">
+    </div>
+    <div class="gift">
+        <img src="img/blue-gift.png" alt="" id="blue-gift">
+    </div>
 </div>
     <script>
         document.onload = function(e){
             document.getElementById("main-audio").load();
+        }
+        let isClicked = 0;
+        let result = document.getElementById("result");
+        document.getElementById("red-gift").onclick = function(e){
+            if (isClicked == 1) {
+                return false;
+            }
+            if (isClicked) {
+                result.classList.add('color-warning');
+                result.innerHTML = "Rõ ràng là tôi bảo chọn 1 phần thôi :)"
+                return false;
+            }
+            isClicked = 1;
+            result.innerHTML = "Chúc mừng cô trúng 2 vé xem phim Mắt Biếc :))) Liên hệ với tôi để lấy nhé :v"
+            result.classList.add('color-result');
+        }
+        document.getElementById("blue-gift").onclick = function(e){
+            if (isClicked == 2) {
+                return false;
+            }
+            if (isClicked) {
+                result.classList.add('color-warning');
+                result.innerHTML = "Rõ ràng là tôi bảo chọn 1 phần thôi :)"
+                
+                return false;
+            }
+            isClicked = 2;
+            result.innerHTML = "Chúc mừng tôi được độc quyền cái bức ảnh ở ĐL nhé :))))"
+            result.classList.add('color-result');
         }
     </script>
 </body>
